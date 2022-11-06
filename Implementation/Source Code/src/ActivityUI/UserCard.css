@@ -1,0 +1,87 @@
+.atWrapper .content .participant{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-block: 0.2em;
+    padding: 0.1em 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.atWrapper .content .participant:hover{
+    border: 2px solid black;
+}
+
+.atWrapper .content .participant .userInfo{
+    display: flex;
+    width: 95%;
+    align-items: center;
+}
+
+.atWrapper .content .participant #profileImg{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+
+.atWrapper .content .participant p{
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.atWrapper .content .participant svg{
+    font-size: 2em;
+    margin-inline: 0.15em;
+    color: #1a265a;
+    cursor: pointer;
+    z-index: 2; /* To make the buttons appear on the surface layer */
+}
+
+.atWrapper .content .participant svg:hover{
+    color: #121a3e;
+}
+
+.atWrapper .content .request{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-block: 0.2em;
+    padding: 0.1em 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.atWrapper .content .request:hover{
+    border: 2px solid black;
+}
+
+.atWrapper .content .request .userInfo{
+    display: flex;
+    width: 85%;
+    align-items: center;
+}
+
+.atWrapper .content .request #profileImg{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+
+.atWrapper .content .request p{
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.atWrapper .content .request svg{
+    font-size: 2em;
+    margin-inline: 0.15em;
+    color: #1a265a;
+    cursor: pointer;
+    z-index: 2; /* To make the buttons appear on the surface layer */
+}
+
+.atWrapper .content .request svg:hover{
+    color: #121a3e;
+}

@@ -1,0 +1,117 @@
+.registrationWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.registrationWrapper .ojLogo{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2%;
+    height: 8em; /* Only set the height as the width will adjust automatically */
+}
+
+.registrationWrapper .formWrapper{
+    position: relative;
+    width: 100%;
+    background: #1a265a;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding-bottom: 0.1em;
+}
+
+.registrationWrapper .formWrapper #title{
+    position: relative;
+    padding-top: 0.2em;
+    margin-bottom: 0.5em;
+    left: 8%;
+    color: #fff;
+    font-size: 2em;
+}
+
+.registrationWrapper .formWrapper .registrationForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.registrationWrapper .formWrapper .registrationForm input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.registrationWrapper .formWrapper .registrationForm input:focus{
+    background: #f3f4f5;
+}
+
+.registrationWrapper .formWrapper .registrationForm .label{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 65%;
+}
+
+.registrationWrapper .formWrapper .registrationForm label{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.registrationWrapper button{
+    cursor: pointer;
+}
+
+.registrationWrapper .formWrapper #create{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 68%;
+    margin-block: 0.5em;
+    background: #ddff57;
+    padding: 0.8em 1em;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.registrationWrapper .formWrapper #create:hover{
+    background: yellow;
+}
+
+
+.registrationWrapper .formWrapper #login{
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.registrationWrapper .formWrapper #loginText{
+    color: #fff;
+    font-weight: bold;
+}
+
+.registrationWrapper #back{
+    position: relative;
+    padding-block: 0.3em;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+}
+
+.registrationWrapper #back:hover{
+    background: #292929;
+}

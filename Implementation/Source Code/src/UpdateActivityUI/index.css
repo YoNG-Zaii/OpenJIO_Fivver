@@ -1,0 +1,144 @@
+.uaWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.uaWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uaWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.uaWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.uaWrapper .formWrapper{
+    position: relative;
+    width: 100%;
+    padding-bottom: 6em;
+}
+
+.uaWrapper .formWrapper .uaForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.uaWrapper .formWrapper .uaForm .label{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 74%;
+    margin-top: 0.5em;
+}
+
+.uaWrapper .formWrapper .uaForm label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.uaWrapper .formWrapper .uaForm #activityImg{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 12em;
+    height: 9em;
+    border: 2px solid gray;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.uaWrapper .formWrapper .uaForm #activityImg:hover{
+    filter: brightness(0.8);
+}
+
+.uaWrapper .formWrapper .uaForm #activityPhoto{
+    visibility: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.uaWrapper .formWrapper .uaForm input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.uaWrapper .formWrapper .uaForm input:focus{
+    background: #f3f4f5;
+}
+
+.uaWrapper .formWrapper .uaForm #description{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 72%;
+    height: 4.5em;
+    margin-block: 0.3em;
+    padding: 0.6em 1em;
+    resize: none;
+    overflow: hidden;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: 0.3s;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.uaWrapper .formWrapper .uaForm #description:focus{
+    background: #f3f4f5;
+}
+
+.uaWrapper .formWrapper .uaForm #time{
+    width: 71%;
+}
+
+.uaWrapper .formWrapper .uaForm .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.uaWrapper .formWrapper .uaForm .buttons #update, 
+.uaWrapper .formWrapper .uaForm .buttons #cancel{
+    background: #ddff57;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.uaWrapper .formWrapper .uaForm .buttons #cancel:hover, 
+.uaWrapper .formWrapper .uaForm .buttons #update:hover{
+    background: yellow;
+}

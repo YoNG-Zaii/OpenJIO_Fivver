@@ -1,0 +1,133 @@
+.slWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.slWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slWrapper .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #1a265a;
+}
+
+.slWrapper .header .logo{
+    position: relative;
+    left: 1em;
+}
+
+.slWrapper .header .logo .ojLogo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.slWrapper .header .content{
+    display: flex;
+    width: 70%;
+    text-align: center;
+}
+
+.slWrapper .header .content form{
+    width: 100%;
+    display: flex;
+}
+
+.slWrapper .header .content .searchBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slWrapper .header .content .searchBar input{
+    margin-top: 0.3em;
+    background: #d3d3d3;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.slWrapper .header .content .searchBar input:focus{
+    background: #f3f4f5;
+}
+
+.slWrapper .header .content .searchBar select{
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+.slWrapper .header .content .searchLogoWrap{
+    position: relative;
+    margin-inline: 0.8em;
+}
+
+.slWrapper .header .content .searchLogoWrap button{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slWrapper .header .content .searchLogoWrap button .searchLogo{
+    transition: 0.3s;
+    color: #fff;
+}
+
+.slWrapper .header .content .searchLogoWrap button:hover .searchLogo{
+    color: lightgrey;
+}
+
+.slWrapper #type{
+    margin-inline: 1em;
+}
+
+.slWrapper .user{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-block: 0.2em;
+    padding: 0.1em 1em;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.slWrapper .user:hover{
+    border: 2px solid black;
+}
+
+.slWrapper .user #profileImg{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+
+.slWrapper .user p{
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.slWrapper .space{
+    padding-bottom: 5em;
+}

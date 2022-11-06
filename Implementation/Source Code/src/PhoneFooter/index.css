@@ -1,0 +1,15 @@
+#back{
+    position: absolute;
+    padding-block: 0.3em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+}
+
+#back:hover{
+    background: #292929;
+}

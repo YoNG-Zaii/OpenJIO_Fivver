@@ -1,0 +1,126 @@
+.HomeUI{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.HomeUI::-webkit-scrollbar {
+    display: none;
+}
+
+.HomeUI .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #1a265a;
+}
+
+.HomeUI .header .logo{
+    position: relative;
+    left: 1em;
+}
+
+.HomeUI .header .logo .ojLogo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.HomeUI .header .content{
+    display: flex;
+    width: 70%;
+    text-align: center;
+}
+
+.HomeUI .header .content form{
+    width: 100%;
+    display: flex;
+}
+
+.HomeUI .header .content .searchBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.HomeUI .header .content .searchBar input{
+    margin-top: 0.3em;
+    background: #d3d3d3;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.HomeUI .header .content .searchBar input:focus{
+    background: #f3f4f5;
+}
+
+.HomeUI .header .content .searchBar select{
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+.HomeUI .header .content .searchLogoWrap{
+    position: relative;
+    margin-inline: 0.8em;
+}
+
+.HomeUI .header .content .searchLogoWrap button{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.HomeUI .header .content .searchLogoWrap button .searchLogo{
+    transition: 0.3s;
+    color: #fff;
+}
+
+.HomeUI .header .content .searchLogoWrap button:hover .searchLogo{
+    color: lightgrey;
+}
+
+.HomeUI .map{
+    text-align: center;
+    width: 100%;
+    height: 15em;
+}
+
+.HomeUI .numberNfilter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HomeUI .numberNfilter p{
+    margin: 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    border: 2px solid lightgreen;
+    width: 12em;
+    font-weight: bold;
+}
+
+.HomeUI .numberNfilter svg{
+    font-size: 2em;
+    cursor: pointer;
+    margin-inline: 1em;
+    color: purple;
+}
+
+.HomeUI .space{
+    padding-bottom: 5em;
+}

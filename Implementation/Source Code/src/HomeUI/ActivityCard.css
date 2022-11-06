@@ -1,0 +1,103 @@
+
+.ActivityCard {
+    position: relative;
+    border-radius: 10px;
+    margin: 1em 1em;
+    box-shadow: 0 3px 10px 0 #aaa;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.ActivityCard:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+.ActivityCard .nameWithPicture{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ActivityCard .nameWithPicture div{
+    margin-inline: 0.3em;
+}
+
+.ActivityCard .nameWithPicture div h2{
+    position: relative;
+    margin: 0;
+    margin-left: 0.2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ActivityCard .nameWithPicture img{
+    width: 16em;
+    height: 8em;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+}
+
+.ActivityCard .userWithFunction{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0.2em;
+}
+
+.ActivityCard .userWithFunction .userInfo{
+    display: flex;
+    width: 85%;
+}
+
+.ActivityCard .userWithFunction .userInfo img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    padding-inline: 0.8em;
+    margin-bottom: 0.5em;
+    object-fit: cover;
+}
+
+.ActivityCard .userWithFunction .userInfo .text p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.ActivityCard .userWithFunction .logo{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.ActivityCard .userWithFunction .logo:hover{
+    background: #d8d8d8;
+}
+
+.ActivityCard .userWithFunction .savedLogo{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: rgb(7, 129, 33);
+}
+
+.ActivityCard .userWithFunction .savedLogo:hover{
+    background: white;
+}
+
+.ActivityCard .userWithFunction .logo #save{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ActivityCard .userWithFunction .savedLogo #save{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
