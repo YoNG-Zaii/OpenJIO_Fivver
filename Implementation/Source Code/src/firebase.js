@@ -4,34 +4,15 @@ import { getFirestore, query, setDoc, doc, getDoc, getDocs, collection, where, a
 import { getStorage } from 'firebase/storage'
 import { getDatabase } from "firebase/database";
 
+// Firebase API key here
 const firebaseApp = initializeApp({
-  apiKey: "AIzaSyCQ4hG2L8xknarRJYah63WCWtXWCUgB5SM",
-  authDomain: "openjio-560ed.firebaseapp.com",
-  projectId: "openjio-560ed",
-  storageBucket: "openjio-560ed.appspot.com",
-  messagingSenderId: "677771045281",
-  appId: "1:677771045281:web:b403e9008bc61d5a9183e0"
+  apiKey: '',
+  authDomain: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: ''
 })
-
-//Guoyong
-// const firebaseApp = initializeApp({
-//   apiKey: "AIzaSyCx0a1skE6ww0UbDTNM41OCsss4wF3ZV1U",
-//   authDomain: "openjio-tgy.firebaseapp.com",
-//   projectId: "openjio-tgy",
-//   storageBucket: "openjio-tgy.appspot.com",
-//   messagingSenderId: "130995870998",
-//   appId: "1:130995870998:web:791e73179191e1ccc08437",
-// })
-
-//Backup Firebase
-// const firebaseApp = initializeApp({
-//   apiKey: "AIzaSyDezzhreCJOIu4JR2x4ZBGX5Ww_ofHqnbM",
-//   authDomain: "openjiobackup.firebaseapp.com",
-//   projectId: "openjiobackup",
-//   storageBucket: "openjiobackup.appspot.com",
-//   messagingSenderId: "282607146102",
-//   appId: "1:282607146102:web:828690740d667fe400bb57",
-// })
 
 const auth = getAuth(firebaseApp)
 const db = getFirestore(firebaseApp)
