@@ -1,0 +1,142 @@
+.frWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.frWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.frWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.frWrapper #title{
+    margin-inline: 1em;
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+}
+
+.frWrapper #nofriend{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.frWrapper .friend{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-block: 0.3em;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.frWrapper .friend .userInfo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2em 1em;
+    width: 75%;
+}
+
+.frWrapper .friend:hover{
+    border: 2px solid black;
+}
+
+.frWrapper .friend #profileImg{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+
+.frWrapper .friend #name{
+    margin-left: 1em;
+    font-weight: bold;
+    width: 70%;
+}
+
+.frWrapper .friend svg{
+    font-size: 2em;
+    margin-inline: 0.15em;
+    color: #1a265a;
+    cursor: pointer;
+    z-index: 2; /* To make the buttons appear on the surface layer */
+}
+
+.frWrapper .friend svg:hover{
+    color: #121a3e;
+}
+
+.frWrapper .request{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-block: 0.3em;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.frWrapper .request .userInfo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2em 1em;
+    width: 75%;
+}
+
+.frWrapper .request:hover{
+    border: 2px solid black;
+}
+
+.frWrapper .request #profileImg{
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+}
+
+.frWrapper .request #name{
+    margin-left: 1em;
+    font-weight: bold;
+    width: 70%;
+}
+
+.frWrapper .request svg{
+    font-size: 2em;
+    margin-inline: 0.15em;
+    color: #1a265a;
+    cursor: pointer;
+    z-index: 2; /* To make the buttons appear on the surface layer */
+}
+
+.frWrapper .request svg:hover{
+    color: #121a3e;
+}
+
+.frWrapper .space{
+    padding-bottom: 5em;
+}

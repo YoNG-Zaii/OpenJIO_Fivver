@@ -1,0 +1,18 @@
+.Wrapper{
+  position: relative;
+  background: #cccccc;
+  width: 100%;
+}
+
+.App{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+}
+
+@media screen and (max-width: 500px){
+  .App{
+    width: 100%;
+  }
+}

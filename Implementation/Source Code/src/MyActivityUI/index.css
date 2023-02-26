@@ -1,0 +1,36 @@
+.maWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.maWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.maWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.maWrapper #subtitle{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 0.8em;
+}
+
+.maWrapper .space{
+    padding-bottom: 5em;
+}

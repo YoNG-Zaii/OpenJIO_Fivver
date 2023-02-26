@@ -1,0 +1,18 @@
+.NavBar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+    background: #1a265a;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.NavBar svg{
+    position: relative;
+    height: 2.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,148 @@
+.epWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.epWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.epWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.epWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.epWrapper .formWrapper{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    /* background: #1a265a; */
+}
+
+.epWrapper .formWrapper .epForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.epWrapper .formWrapper .epForm #profileImg{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.epWrapper .formWrapper .epForm #profileImg:hover{
+    filter: brightness(.8);
+}
+
+.epWrapper .formWrapper .epForm #photoTitle{
+    text-align: center;
+    margin-top: 0;
+}
+
+.epWrapper .formWrapper .epForm #profilePhoto{
+    visibility: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.epWrapper .formWrapper .epForm input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.epWrapper .formWrapper .epForm input:focus{
+    background: #f3f4f5;
+}
+
+.epWrapper .formWrapper .epForm .label{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 74%;
+}
+
+.epWrapper .formWrapper .epForm label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.epWrapper button{
+    cursor: pointer;
+}
+
+.epWrapper .formWrapper .epForm #description{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 71%;
+    height: 7.6em;
+    margin-block: 0.3em;
+    padding: 0.6em 1em;
+    resize: none;
+    overflow: hidden;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: 0.3s;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.epWrapper .formWrapper .epForm #description:focus{
+    background: #f3f4f5;
+}
+
+.epWrapper .formWrapper #save{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 68%;
+    margin-block: 0.5em;
+    background: #ddff57;
+    padding: 0.8em 1em;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.epWrapper .formWrapper #save:hover{
+    background: yellow;
+}

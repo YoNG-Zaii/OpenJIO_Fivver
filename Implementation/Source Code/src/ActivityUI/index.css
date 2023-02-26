@@ -1,0 +1,87 @@
+.atWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.atWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.atWrapper .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.atWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.atWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.atWrapper .content{
+    margin: 1em 1em;
+    font-size: 0.9em;
+}
+
+.atWrapper .content #actTitle{
+    margin-bottom: 0.2em;
+}
+
+.atWrapper .content h3{
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+.atWrapper .content #desp{
+    margin: 0;
+}
+
+.atWrapper .content .map{
+    text-align: center;
+    width: 100%;
+    height: 15em;
+    margin-block: 1em;
+}
+
+.atWrapper .content #datetime{
+    margin-top: 0;
+}
+
+.atWrapper .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+}
+
+.atWrapper .buttons #act{
+    width: 6em;
+    background: #ddff57;
+    padding: 0.5em 0.8em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.atWrapper .buttons #act:hover{
+    background: yellow;
+}
+
+.atWrapper .space{
+    margin-bottom: 5em;
+}

@@ -1,0 +1,107 @@
+.chatWindow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10;
+    background: lightyellow;
+    min-height: 33em;
+    padding-block: 1em;
+}
+
+.chatWindow .sent{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.chatWindow .received{
+    display: flex;
+}
+
+.chatWindow .message{
+    padding-inline: 0.4em;
+    margin: 0.2em 0.5em;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-radius: 0.3em;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.chatWindow .message p{
+    margin: 0;
+    padding: 0.2em;
+    min-width: 5em;
+    max-width: 14em;
+}
+
+.chatWindow .sent .message{
+    background: #bb00bb;
+    color: #ffffff;
+    border-top-left-radius: 1em;
+}
+
+.chatWindow .sent .message:hover{
+    background: #450045;
+}
+
+.chatWindow .sent .message #read{
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+.chatWindow .sent .message #unread{
+    font-size: 1.3em;
+    color: darkgrey;
+}
+
+.chatWindow .received .message{
+    background: #515151;
+    color: #ffffff;
+    border-top-right-radius: 1em;
+}
+
+.chatWindow .received .message:hover{
+    background: #2a2a2a;
+}
+
+.chatWindow .messageInput{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+
+.chatWindow .messageInput input{
+    background: #c7cccf;
+    border: none;
+    border-radius: 1em;
+    padding: 1em 1em;
+    width: 80%;
+    margin-inline: 0.5em;
+}
+
+.chatWindow .messageInput input:focus{
+    background: #f3f4f5;
+}
+
+.chatWindow .messageInput button{
+    border: none;
+    border-radius: 50%;
+    background: #ddff57;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chatWindow .messageInput button:hover{
+    background: yellow;
+}
+
+.chatWindow .messageInput button svg{
+    height: 2em;
+    width: 2em;
+    padding: 0.3em 0.3em;
+}
