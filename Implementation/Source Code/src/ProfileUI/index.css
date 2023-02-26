@@ -1,0 +1,91 @@
+.pfWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.pfWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pfWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.pfWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.pfWrapper .profile{
+    margin-top: 1.5em;
+}
+
+.pfWrapper .profile #profileImg{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    object-fit: cover;
+}
+
+.pfWrapper .profile .name{
+    font-size: 1.6em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.pfWrapper .count{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.pfWrapper .count div{
+    text-align: center;
+}
+
+.pfWrapper .count div h3{
+    font-size: 1.8em;
+    margin-top: 0.3em;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.pfWrapper .count div p{
+    margin-top: 0;
+}
+
+.pfWrapper .content{
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.pfWrapper .content button{
+    width: 70%;
+    margin-block: 0.2em;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.pfWrapper .content button:hover{
+    background: #f3f4f5;
+}

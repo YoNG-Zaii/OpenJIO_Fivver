@@ -1,0 +1,142 @@
+.caWrapper{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.caWrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caWrapper .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.caWrapper .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.caWrapper .formWrapper{
+    position: relative;
+    width: 100%;
+    padding-bottom: 6em;
+}
+
+.caWrapper .formWrapper .caForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.caWrapper .formWrapper .caForm .label{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 74%;
+    margin-top: 0.5em;
+}
+
+.caWrapper .formWrapper .caForm label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.caWrapper .formWrapper .caForm #activityImg{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 12em;
+    height: 9em;
+    border: 2px solid gray;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.caWrapper .formWrapper .caForm #activityImg:hover{
+    filter: brightness(0.8);
+}
+
+
+.caWrapper .formWrapper .caForm #activityPhoto{
+    visibility: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.caWrapper .formWrapper .caForm input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    margin-block: 0.3em;
+    background: #c7cccf;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.caWrapper .formWrapper .caForm input:focus{
+    background: #f3f4f5;
+}
+
+.caWrapper .formWrapper .caForm #description{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 72%;
+    height: 7em;
+    margin-block: 0.3em;
+    padding: 0.6em 1em;
+    resize: none;
+    overflow: hidden;
+    background: #c7cccf;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: 0.3s;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.caWrapper .formWrapper .caForm #description:focus{
+    background: #f3f4f5;
+}
+
+.caWrapper .formWrapper #post{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 68%;
+    margin-block: 0.5em;
+    background: #ddff57;
+    padding: 0.8em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.caWrapper .formWrapper .caForm #time{
+    width: 71%;
+}
+
+.caWrapper .formWrapper #post:hover{
+    background: yellow;
+}

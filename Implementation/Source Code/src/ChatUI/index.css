@@ -1,0 +1,46 @@
+.ChatUI{
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.ChatUI .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ChatUI .header .ojLogo{
+    position: relative;
+    left: 1em;
+    height: 3.5em; /* Only set the height as the width will adjust automatically */
+}
+
+.ChatUI .header .title{
+    position: relative;
+    right: 1em;
+    font-size: 1.6em;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.ChatUI .profileHeader{
+    position: relative;
+    display: flex;
+    padding-block: 0.2em;
+    border-bottom: 2px solid lightgray;
+    align-items: center;
+}
+
+.ChatUI .profileHeader img{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    margin-inline: 1em;
+}
+
+.ChatUI .profileHeader .name{
+    font-size: 1.4em;
+}
